@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO - Projets</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projets.css">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/rgpd.css">
+</head>
+<body>
+    <!-- En-tête avec barre de navigation -->
+    <header>
+        <div class="logo">
+            <h1>Portfolio<span>SIO</span></h1>
+        </div>
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Mes Projets</h1>
+                <p>Découvrez les projets réalisés durant ma formation</p>
+            </div>
+        </section>
+
+        <section class="projets-container">
+            <div class="container">
+                <div class="projets-tabs">
+                    <button class="tab-btn active" data-category="all">Tous les projets</button>
+                    <button class="tab-btn" data-category="ap">Ateliers de Professionnalisation</button>
+                    <button class="tab-btn" data-category="stage">Stages</button>
+                    <button class="tab-btn" data-category="perso">Projets personnels</button>
+                    <button class="tab-btn" data-category="engagement">Engagement étudiant</button>
+                </div>
+
+                <div class="projets-grid" id="projets-grid">
+                    <!-- AP0 - Portfolio -->
+                    <div class="projet-card" data-category="ap" id="ap0">
+                        <div class="projet-image" style="background-image: url('images/projet-portfolio.jpg');">
+                            <div class="projet-badge">AP0</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Site portefeuille de compétences</h3>
+                            <p>Création d'un portfolio en ligne pour présenter mon parcours et mes compétences</p>
+                            <div class="projet-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Responsive</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="ap0-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- AP1 - Site vitrine activité -->
+                    <div class="projet-card" data-category="ap" id="ap1">
+                        <div class="projet-image" style="background-image: url('images/projet-maison-culture.jpg');">
+                            <div class="projet-badge">AP1</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Site vitrine — Activité culturelle (Maison de la Culture)</h3>
+                            <p>Site web responsive HTML5/CSS3/JavaScript présentant une activité culturelle : présentation, calendrier, tarifs avec calculateur, GoogleMap, formulaire de contact et images réactives.</p>
+                            <div class="projet-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="ap1-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- AP2 - Site dynamique -->
+                    <div class="projet-card" data-category="ap" id="ap2">
+                        <div class="projet-image" style="background-image: url('images/projet-database.jpg');">
+                            <div class="projet-badge">AP2</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Dynamisation du site de l'AP1</h3>
+                            <p>Site dynamique PHP/MySQL/PDO : gestion des adhérents (CRUD), authentification par sessions, statistiques, panier virtuel en PHP objet et conformité RGPD.</p>
+                            <div class="projet-tags">
+                                <span>PHP / PDO</span>
+                                <span>MySQL</span>
+                                <span>POO</span>
+                                <span>Sessions</span>
+                                <span>RGPD</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="ap2-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- AP3 - Site dynamique avancé -->
+                    <div class="projet-card" data-category="ap" id="ap3">
+                        <div class="projet-image" style="background-image: url('images/projet-ap3.jpg');">
+                            <div class="projet-badge">AP3</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Maison de la Culture — SQL Server &amp; CodeIgniter</h3>
+                            <p>Application web client/serveur avancée : migration MySQL → SQL Server (SSMA), procédures stockées, déclencheurs, vues, et site MVC sous Framework CodeIgniter avec authentification multi-rôles.</p>
+                            <div class="projet-tags">
+                                <span>SQL Server</span>
+                                <span>Transact-SQL</span>
+                                <span>CodeIgniter (MVC)</span>
+                                <span>PHP</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="ap3-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- AP4 - Application mobile Android -->
+                    <div class="projet-card" data-category="ap" id="ap4">
+                        <div class="projet-image" style="background-image: url('images/projet-ap4.jpg');">
+                            <div class="projet-badge">AP4</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Application mobile Android — Cas LocDVD</h3>
+                            <p>Application Android (Java / Android Studio) avec interfaces, ListView (XML, JSON), authentification et consommation d'une API REST PHP/SQL Server via Retrofit.</p>
+                            <div class="projet-tags">
+                                <span>Android</span>
+                                <span>Java</span>
+                                <span>Retrofit</span>
+                                <span>API REST</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="ap4-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- Stage 1ère année -->
+                    <div class="projet-card" data-category="stage" id="stage1">
+                        <div class="projet-image" style="background-image: url('images/projet-stage1.jpg');">
+                            <div class="projet-badge">Stage</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Stage de 1ère année — Alpha Distribution</h3>
+                            <p>Stage de 5 semaines chez Alpha Distribution (Nîmes) : conception d'une base de données SQL et d'une application PHP de gestion clients, devis, factures, paiements et relances.</p>
+                            <div class="projet-tags">
+                                <span>SQL</span>
+                                <span>PHP / PDO</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="stage1-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- Stage 2ème année -->
+                    <div class="projet-card" data-category="stage" id="stage2">
+                        <div class="projet-image" style="background-image: url('images/projet-stage2.jpg');">
+                            <div class="projet-badge">Stage</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Stage de 2ème année — Alphatis Nîmes-Livraison</h3>
+                            <p>Application web CodeIgniter / MySQL / Bootstrap pour la gestion simplifiée des tournées et du stock d'un entrepôt : back-office admin (CRUD stocks, commandes, utilisateurs) et front-office livreur avec cartographie Leaflet.</p>
+                            <div class="projet-tags">
+                                <span>CodeIgniter</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+                                <span>Leaflet API</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="stage2-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- Engagement étudiant -->
+                    <div class="projet-card" data-category="engagement" id="engagement1">
+                        <div class="projet-image" style="background-image: url('images/projet-engagement.jpg');">
+                            <div class="projet-badge">Engagement</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Association « Sensibilisation à l'IA »</h3>
+                            <p>Création et présidence d'une association loi 1901 (RNA W302023332) visant à promouvoir un usage responsable, modéré et éclairé de l'intelligence artificielle.</p>
+                            <div class="projet-tags">
+                                <span>Loi 1901</span>
+                                <span>Présidence</span>
+                                <span>Sensibilisation IA</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="engagement1-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- Projet personnel -->
+                    <div class="projet-card" data-category="perso" id="perso1">
+                        <div class="projet-image" style="background-image: url('images/projet-perso.jpg');">
+                            <div class="projet-badge">Perso</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Application de gestion de tâches</h3>
+                            <p>Développement d'une application web de gestion de tâches</p>
+                            <div class="projet-tags">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>LocalStorage</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="perso1-details">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Détails des projets (modals) -->
+        <div class="projet-details-overlay" id="projet-details-overlay">
+            <!-- AP0 - Portfolio -->
+            <div class="projet-details" id="ap0-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Site portefeuille de compétences</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Création d'un site portefeuille de compétences (Portfolio)</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Conception et développement d'un site web responsive servant de portefeuille de compétences pour le BTS SIO. Ce site présente mon profil, mon CV, mes compétences en français et en anglais, et mes différents projets réalisés durant ma formation.</td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>Septembre - Octobre 2024</td>
+                            </tr>
+                            <tr>
+                                <th>Outils utilisés</th>
+                                <td>HTML5, CSS3, JavaScript, Bootstrap, VS Code, WampServer, FileZilla</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Lycée CCI de Nîmes</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Atelier de Professionnalisation 0 (AP0)</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail individuel avec suivi par les enseignants</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/ap0-schema.jpg" alt="Schéma du projet AP0">
+                        </div>
+                        <div class="details-links">
+                            <h3>Liens utiles</h3>
+                            <ul>
+                                <li><i class="fas fa-file-pdf"></i> Sujet officiel AP0 — Site portefeuille de compétences (Lycée CCI Nîmes) — <a href="documents/ap0/Sujet_PPE0.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-file-pdf"></i> Référentiel des compétences BTS SIO option SLAM — <a href="documents/ap0/BTS_SIO_Competences_SLAM.pdf" download>Télécharger le PDF</a></li>
+                                <li><a href="https://github.com/IhabBenmahrouz" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Développer la présence en ligne de l'organisation</li>
+                            <li>Gérer son identité professionnelle</li>
+                            <li>Exploiter les ressources du cadre applicatif (framework)</li>
+                            <li>Réaliser les tests nécessaires à la validation d'éléments adaptés ou développés</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AP1 - Site vitrine activité -->
+            <div class="projet-details" id="ap1-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Site vitrine pour une activité culturelle</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Développement d'un site vitrine HTML5/CSS3/JavaScript responsive pour une activité culturelle (Maison de la Culture)</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Conception et développement d'un site web vitrine présentant une activité culturelle, à partir d'un gabarit Bootstrap responsive. Le site est composé de pages publiques (sans authentification) répondant aux normes de qualité W3C : ergonomie, accessibilité (WCAG), sémantique HTML5 et séparation contenu/présentation. Plusieurs fonctions dynamiques sont développées en JavaScript natif.</td>
+                            </tr>
+                            <tr>
+                                <th>Structure du site</th>
+                                <td>
+                                    <ul style="margin:0; padding-left:1.2rem;">
+                                        <li><strong>Accueil</strong> : présentation de l'activité + GoogleMap de localisation</li>
+                                        <li><strong>Présentation des personnes</strong> : photos avec descriptifs au survol (images réactives)</li>
+                                        <li><strong>Calendrier des événements</strong> : planning des activités</li>
+                                        <li><strong>Tarifs</strong> : grille tarifaire + calculateur JavaScript de cotisation annuelle</li>
+                                        <li><strong>Formulaire de contact / inscription</strong> : avec contrôles HTML5 et regex JS</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Fonctions techniques</th>
+                                <td>
+                                    <ul style="margin:0; padding-left:1.2rem;">
+                                        <li>Formulaire d'inscription complet (identité, contact, date de naissance, niveau, certificat médical, autorisation parentale si mineur)</li>
+                                        <li>Intégration GoogleMap (localisation du siège de l'activité)</li>
+                                        <li>Calculateur JavaScript : calcul du coût annuel d'adhésion avec remises famille (50 € / an, –30 % &lt;12 ans, –20 % 12–16 ans, –10 % 16–18 ans)</li>
+                                        <li>Images réactives : descriptifs au survol des photos</li>
+                                        <li>Validation des champs (pattern HTML5 + regex JavaScript)</li>
+                                        <li>Validation W3C HTML5 et CSS</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>Novembre – Décembre 2024 (7 séances de PPE)</td>
+                            </tr>
+                            <tr>
+                                <th>Outils utilisés</th>
+                                <td>HTML5, CSS3, JavaScript (DOM, événements, regex), Bootstrap responsive, VS Code, console de débogage Mozilla Firefox, logiciel de retouche d'images, FileZilla (FTP), validateurs W3C (validator.w3.org, jigsaw.w3.org/css-validator)</td>
+                            </tr>
+                            <tr>
+                                <th>Architecture des dossiers</th>
+                                <td><code>index.html</code> + dossiers <code>styles/</code>, <code>images/</code>, <code>javascript/</code>, <code>pages/</code></td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Lycée CCI de Nîmes</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Atelier de Professionnalisation 1 (AP1) — BTS SIO 1ère année option SLAM</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail individuel (étudiant = maître d'œuvre, enseignant = maître d'ouvrage), avec validation par recette finale</td>
+                            </tr>
+                            <tr>
+                                <th>Évaluation</th>
+                                <td>Note sur 30 → ramenée sur 20 — critères : intégration du gabarit, accueil + CSS, GoogleMap, images réactives, calendrier, tarifs + calculateur, formulaire + contrôles, validation W3C et intégration au portfolio</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/ap1-schema.jpg" alt="Schéma du projet AP1">
+                        </div>
+                        <div class="details-links">
+                            <h3>Liens utiles</h3>
+                            <ul>
+                                <li><i class="fas fa-file-pdf"></i> Sujet officiel AP1 — Site vitrine activité (Lycée CCI Nîmes) — <a href="documents/ap1/AP1_Sujet_Site_Vitrine.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-clipboard-check"></i> Grille d'évaluation AP1 — <a href="documents/ap1/AP1_Grille_Evaluation.pdf" download>Télécharger le PDF</a></li>
+                                <li><a href="https://github.com/IhabBenmahrouz" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a></li>
+                                <li><a href="projets/ap1/" target="_blank"><i class="fas fa-external-link-alt"></i> Voir le site en ligne</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Concevoir et développer une solution applicative</li>
+                            <li>Exploiter les technologies Web (HTML5, CSS3, JavaScript)</li>
+                            <li>Utiliser un framework CSS responsive (Bootstrap)</li>
+                            <li>Développer la présence en ligne de l'organisation</li>
+                            <li>Travailler en mode projet (maître d'œuvre / maître d'ouvrage)</li>
+                            <li>Garantir la qualité, l'ergonomie et l'accessibilité (WCAG, validation W3C)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AP2 - Site dynamique -->
+            <div class="projet-details" id="ap2-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Dynamisation du site de l'activité (AP2)</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Dynamisation du site de l'activité de l'AP1 — base de données MySQL, accès PDO, authentification, programmation objet et RGPD</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Prolongement du site vitrine de l'AP1 vers une solution dynamique. Conception d'une base de données MySQL (modélisée avec Looping), implémentation d'un CRUD complet via PHP/PDO, authentification sécurisée par sessions, programmation orientée objet (panier virtuel de réservation d'évènements) et mise en conformité RGPD avec consentement de cookies. Ouverture des back-offices côté administrateur et front-office côté adhérent.</td>
+                            </tr>
+                            <tr>
+                                <th>Besoins fonctionnels</th>
+                                <td>
+                                    <ul style="margin:0; padding-left:1.2rem;">
+                                        <li>Gestion des <strong>adhérents</strong> (inscription, photo, catégorie d'âge, identifiant + mot de passe haché)</li>
+                                        <li>Gestion des <strong>tarifs</strong> et des réductions par catégorie</li>
+                                        <li>Gestion du <strong>calendrier</strong> des séances/entraînements (date, plage horaire, objectif, présence)</li>
+                                        <li>Gestion des <strong>évènements</strong> (compétitions, tournois, représentations) avec résultats</li>
+                                        <li><strong>Réservation de places</strong> par formulaire (adhérents et non-adhérents)</li>
+                                        <li>Gestion des données du <strong>formulaire de contact</strong> de l'AP1</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Phases de travail</th>
+                                <td>
+                                    <ol style="margin:0; padding-left:1.2rem;">
+                                        <li><strong>MCD + base MySQL</strong> avec Looping, jeu d'essai sur Laragon</li>
+                                        <li><strong>Environnement Laragon</strong> et copie du site AP1</li>
+                                        <li><strong>Accès PDO</strong> (FrontOffice : insertion adhérents avec hashage + page profil ; BackOffice : listage par catégorie via combo box)</li>
+                                        <li><strong>Statistiques PDO</strong> : nombre/taux d'adhésions par catégorie, montant total annuel</li>
+                                        <li><strong>CRUD complet</strong> sur la rubrique Adhérent (Create, Read, Update, Delete)</li>
+                                        <li><strong>Authentification par sessions</strong> (formulaire, session_start, $_SESSION, déconnexion)</li>
+                                        <li><strong>Panier virtuel en PHP objet</strong> : classe <code>Reservation</code> + tableau d'objets (TableauDeReservationPossible, Panier) + table SQL <code>Panier</code></li>
+                                        <li><strong>RGPD</strong> : consentement de cookies (codexworld / Cookiebot)</li>
+                                        <li><strong>Intégration globale</strong> : validation W3C, tests, mise en production sur SRVSIOC, mise à jour du portfolio</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Architecture applicative</th>
+                                <td>Classes métier + <code>Configuration.cfg.php</code> + classe PDO (extensions MySQL) → connexion + ordres SQL + résultats. Composants : formulaires de modification, pages action, listes déroulantes, tableaux HTML, modules de recherche et d'authentification.</td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>Mars – Mai 2025 (cours/TP du 11/03 au 13/05/2025, évaluation finale le 13/05/2025)</td>
+                            </tr>
+                            <tr>
+                                <th>Outils & technologies</th>
+                                <td>
+                                    <strong>Backend :</strong> PHP 8 (PDO, sessions, POO, héritage, abstraction, MVC)<br>
+                                    <strong>SGBD :</strong> MySQL via Laragon, phpMyAdmin<br>
+                                    <strong>Modélisation :</strong> Looping (MCD)<br>
+                                    <strong>Frontend :</strong> HTML5, CSS3, JavaScript, AJAX<br>
+                                    <strong>Sécurité :</strong> <code>password_hash()</code>, <code>$_SESSION</code>, JWT<br>
+                                    <strong>RGPD :</strong> codexworld / Cookiebot pour le consentement<br>
+                                    <strong>IDE :</strong> Visual Studio Code<br>
+                                    <strong>Validation :</strong> Validateur W3C<br>
+                                    <strong>Production :</strong> serveur SRVSIOC du lycée
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Lycée CCI de Nîmes</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Atelier de Professionnalisation 2 (AP2) — BTS SIO 1ère année option SLAM (groupe SIO1B)</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail individuel sur 14 séances de cours/TP, avec suivi par les enseignants (H. Kallal / G. Vidal)</td>
+                            </tr>
+                            <tr>
+                                <th>Évaluation</th>
+                                <td>
+                                    <strong>Phase 1 /20</strong> : MCD + base MySQL (10 pts), accès PDO + formulaire + profil (10 pts), statistiques + CRUD (10 pts)<br>
+                                    <strong>Phase 2 /20</strong> : authentification par session (10 pts), POO panier virtuel (15 pts), RGPD/cookies (5 pts)
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/ap2-schema.jpg" alt="Schéma du projet AP2">
+                        </div>
+                        <div class="details-links">
+                            <h3>Liens utiles</h3>
+                            <ul>
+                                <li><i class="fas fa-file-pdf"></i> Sujet officiel AP2 — Dynamisation du site (Lycée CCI Nîmes) — <a href="documents/ap2/AP2_Sujet_Dynamisation.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-file-pdf"></i> Cours — Sécuriser l'accès à un site avec les sessions PHP — <a href="documents/ap2/AP2_Cours_Sessions_PHP.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-calendar-alt"></i> Planning cours / TP / contrôle SIO1B — <a href="documents/ap2/AP2_Planning_SIO1B.pdf" download>Télécharger le PDF</a></li>
+                                <li><a href="https://github.com/IhabBenmahrouz" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a></li>
+                                <li><a href="projets/ap2/" target="_blank"><i class="fas fa-external-link-alt"></i> Voir le site en ligne</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Concevoir ou adapter une base de données (MCD avec Looping)</li>
+                            <li>Exploiter des données à l'aide d'un langage de requêtes (SQL/PDO)</li>
+                            <li>Développer des fonctionnalités applicatives au sein d'un SGBD (CRUD, statistiques)</li>
+                            <li>Programmer en orienté objet (classes, héritage, abstraction, MVC)</li>
+                            <li>Sécuriser une application (sessions, hashage, JWT)</li>
+                            <li>Garantir la conformité RGPD (consentement de cookies)</li>
+                            <li>Mettre à disposition des utilisateurs un service informatique (mise en production)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 1ère année -->
+            <div class="projet-details" id="stage1-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Stage de 1ère année — Alpha Distribution</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Conception d'une base de données SQL et d'une application PHP de gestion clients/factures pour Alpha Distribution</td>
+                            </tr>
+                            <tr>
+                                <th>Réalisation</th>
+                                <td>
+                                    <p>Conception et développement d'une application web complète (PHP / MySQL / Bootstrap) destinée à centraliser la gestion administrative et commerciale d'Alpha Distribution. Le projet a remplacé un fonctionnement basé sur des fichiers Word/Excel dispersés par une solution intégrée et sécurisée.</p>
+                                    <p><strong>Ce que j'ai fait :</strong></p>
+                                    <ul style="margin:0; padding-left:1.2rem;">
+                                        <li>Conception d'une base de données SQL centralisant clients, devis, factures, paiements et relances</li>
+                                        <li>Développement d'une application web PHP/MySQL avec PDO (architecture MVC simplifiée)</li>
+                                        <li>Mise en place du CRUD complet (clients, devis, factures, paiements)</li>
+                                        <li>Conversion automatique devis → facture, calcul des totaux HT/TVA/TTC</li>
+                                        <li>Génération automatique des relances (R1 → R3) selon le retard</li>
+                                        <li>Tableau de bord (CA, encaissements, impayés) avec Chart.js</li>
+                                        <li>Sécurité : requêtes préparées, hashage des mots de passe, conformité RGPD</li>
+                                        <li>Rédaction du dossier technique, du guide utilisateur et formation interne</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>Du 26 mai au 27 juin 2025 (5 semaines)</td>
+                            </tr>
+                            <tr>
+                                <th>Organisme d'accueil</th>
+                                <td>SAS <strong>Alpha Distribution</strong> (Alphatis) — 690 rue Le Corbusier, 30000 Nîmes</td>
+                            </tr>
+                            <tr>
+                                <th>Tuteur en entreprise</th>
+                                <td>M. Nabil KADRI — Président délégué</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Stage obligatoire de 1ère année — BTS SIO 1B SLAM — Année universitaire 2024/2025</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/stage1-schema.jpg" alt="Stage chez Alpha Distribution">
+                        </div>
+                        <div class="details-links">
+                            <h3>Document</h3>
+                            <ul>
+                                <li><i class="fas fa-file-pdf"></i> Rapport de stage (BTS SIO option SLAM) — <a href="documents/stages/stage1/Rapport_de_stage_Ihab_Benmahrouz.pdf" download>Télécharger le PDF</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AP3 - Site dynamique avancé -->
+            <div class="projet-details" id="ap3-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : AP3 — Maison de la Culture (SQL Server &amp; CodeIgniter)</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Analyse et développement d'un site web client/serveur avec SQL Server et Framework CodeIgniter — contexte Maison de la Culture</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Prolongement de l'AP2 : enrichissement de la base de données, migration MySQL → SQL Server avec SSMA, automatisation des règles de gestion par déclencheurs et procédures stockées en Transact-SQL, et reconstruction du site web côté client en MVC avec le Framework CodeIgniter. Authentification multi-rôles (invité, joueur, entraîneur, membre de l'organisation) avec redirection vers des vues spécifiques.</td>
+                            </tr>
+                            <tr>
+                                <th>Domaines fonctionnels</th>
+                                <td>
+                                    <ul style="margin:0; padding-left:1.2rem;">
+                                        <li><strong>Adhérents</strong> : héritage entre adhérent / entraîneur (spécialité, diplôme, expérience) / joueur (date d'entrée, renouvellement)</li>
+                                        <li><strong>Évènements</strong> : tournois/compétitions/séances animés par un coach (avec remplaçant via réflexivité), inscriptions, présence et travail réalisé, lieu</li>
+                                        <li><strong>Réunions internes</strong> : convocation des entraîneurs, ordre du jour ordonné, dates et objets</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Travaux base de données</th>
+                                <td>
+                                    <ol style="margin:0; padding-left:1.2rem;">
+                                        <li>Compléter le MCD avec <strong>Looping</strong> (héritage, réflexivité, contraintes de partition/exclusion/totalité)</li>
+                                        <li>Migrer la base MySQL vers SQL Server avec <strong>SSMA</strong></li>
+                                        <li>Compléter la base SQL Server, créer un <strong>jeu d'essai</strong></li>
+                                        <li><strong>Sauvegarder</strong> la BDD via génération de scripts SQL (SSMS)</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Programmation Transact-SQL</th>
+                                <td>
+                                    <strong>Procédures stockées :</strong>
+                                    <ul style="margin:0 0 0.5rem 1.2rem; padding:0;">
+                                        <li>Liste des adhérents ayant renouvelé leur adhésion</li>
+                                        <li>Liste des points à traiter (ordre du jour) d'une réunion</li>
+                                        <li>Liste des évènements suivis par un adhérent (présence + travail)</li>
+                                        <li>Nombre d'évènements suivis par un joueur entre 2 dates</li>
+                                        <li>Nombre d'heures d'entraînement suivies par chaque joueur</li>
+                                    </ul>
+                                    <strong>Déclencheurs (triggers) :</strong>
+                                    <ul style="margin:0 0 0.5rem 1.2rem; padding:0;">
+                                        <li>Génération automatique de login + mot de passe haché (<code>HASHBYTES SHA2_512</code>) à l'ajout d'un adhérent</li>
+                                        <li>Comptage automatique du nombre d'évènements par adhérent</li>
+                                        <li>Historisation dans <code>HISTOADH</code> en cas de non-renouvellement</li>
+                                    </ul>
+                                    <strong>Vues :</strong>
+                                    <ul style="margin:0; padding-left:1.2rem;">
+                                        <li>Évènements avec personnes présentes</li>
+                                        <li>Adhérents entraîneurs / Adhérents joueurs</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Site web — CodeIgniter (MVC)</th>
+                                <td>
+                                    <strong>Architecture du projet :</strong>
+                                    <pre style="background:#f4f4f4; padding:0.5rem; font-size:0.85em; overflow-x:auto; margin:0.3rem 0;">application/
+├── controllers/    Auth, Admin, Entrainements, Evenements, Reunions
+├── models/         User_model, Entrainement_model, Evenement_model,
+│                   Reunion_model, Participation_model
+└── views/          auth/, admin/, entrainements/, evenements/,
+                    reunions/, dashboard/ (selon rôle)</pre>
+                                    <strong>Pages et rôles :</strong>
+                                    <ul style="margin:0; padding-left:1.2rem;">
+                                        <li><strong>Invité</strong> : présentation du club</li>
+                                        <li><strong>Joueur</strong> : liste des joueurs et des évènements</li>
+                                        <li><strong>Entraîneur</strong> : gestion des présences et du travail réalisé</li>
+                                        <li><strong>Membre de l'organisation</strong> : CRUD complet sur entraîneurs (avec gestion des remplacements) et évènements</li>
+                                    </ul>
+                                    Authentification par email (généré par déclencheur) ou pseudo, avec redirection automatique selon statut.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>Année 2024–2025 (13 séances S1→S13, BTS SIO 2ème année). Évaluation finale après les vacances. Stage en parallèle du 13/01/2025 au 14/02/2025.</td>
+                            </tr>
+                            <tr>
+                                <th>Outils &amp; technologies</th>
+                                <td>
+                                    <strong>SGBD :</strong> SQL Server 2019, SQL Server Management Studio (SSMS), SSMA (migration MySQL → SQL Server), drivers ODBC<br>
+                                    <strong>Modélisation :</strong> Looping (MCD avec héritage et réflexivité)<br>
+                                    <strong>Backend :</strong> Transact-SQL (Procédures stockées, Déclencheurs AFTER/INSTEAD OF, Vues, fonctions)<br>
+                                    <strong>Sécurité :</strong> hachage <code>HASHBYTES SHA2_512</code>, Try/Catch, JWT<br>
+                                    <strong>Framework :</strong> CodeIgniter (MVC, ORM, routage, vues, assets, API REST)<br>
+                                    <strong>Serveur :</strong> Laragon, Apache<br>
+                                    <strong>IDE :</strong> Visual Studio Code, Composer
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Concepts d'analyse abordés</th>
+                                <td>Héritage et contraintes (partition, exclusion, totalité), id relatif, réflexivité (associations unaires fonctionnelles et non fonctionnelles), formes normales, intégrité référentielle</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Lycée CCI de Nîmes</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Atelier de Professionnalisation 3 (AP3) — BTS SIO 2ème année option SLAM</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail individuel avec contrôles intermédiaires (Cours 1 : MVC/MCD/SQL ; Cours 2 : TR/PS/ORM) et 2 évaluations AP3 (BDD puis CodeIgniter)</td>
+                            </tr>
+                            <tr>
+                                <th>Évaluation</th>
+                                <td>
+                                    <strong>Programmation BDD SQL Server /60</strong> : analyse (héritage adhérents, évènements, réunions) /20, procédures stockées /20, déclencheurs /15, vues /5<br>
+                                    <strong>CodeIgniter /60</strong> : modélisation (vues, modèles, clés étrangères, héritage, authentification) /30, programmation (redirection, pages selon rôle, CRUD) /30
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/ap3-schema.jpg" alt="Schéma du projet AP3">
+                        </div>
+                        <div class="details-links">
+                            <h3>Sujet et grille</h3>
+                            <ul>
+                                <li><i class="fas fa-file-pdf"></i> Sujet officiel AP3 — Maison de la Culture (SQL Server / CodeIgniter) — <a href="documents/ap3/AP3_Sujet_MDC.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-clipboard-check"></i> Grille d'évaluation AP3 — <a href="documents/ap3/AP3_Grille_Evaluation.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-sitemap"></i> Architecture applicative (CodeIgniter) — <a href="documents/ap3/AP3_Architecture_App.pdf" download>Télécharger le PDF</a></li>
+                            </ul>
+                            <h3 style="margin-top:1rem;">Fiches de cours / TP</h3>
+                            <ul>
+                                <li><i class="fas fa-database"></i> Fiche 01 — Conversion MySQL → SQL Server avec SSMA — <a href="documents/ap3/AP3_Fiche_SSMA_Migration.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-project-diagram"></i> Fiche 03 — Héritage et contraintes (MCD) — <a href="documents/ap3/AP3_Fiche_Heritage_Contraintes.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-sync-alt"></i> Fiche 05 — Réflexivité (associations unaires) — <a href="documents/ap3/AP3_Fiche_Reflexivite.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-save"></i> Fiche 06 — Sauvegarde / restauration d'une BDD — <a href="documents/ap3/AP3_Fiche_Sauvegarde_BDD.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-cogs"></i> Fiche 08 — Procédures stockées (PS) — <a href="documents/ap3/AP3_Fiche_Procedures_Stockees.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-bolt"></i> Fiche 09 — Déclencheurs (triggers) — <a href="documents/ap3/AP3_Fiche_Declencheurs.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-file-code"></i> Script SQL — Mer Et Soleil (structure + données) — <a href="documents/ap3/AP3_Script_MerEtSoleil.sql" download>Télécharger le SQL</a></li>
+                            </ul>
+                            <h3 style="margin-top:1rem;">Liens externes</h3>
+                            <ul>
+                                <li><a href="https://github.com/IhabBenmahrouz" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Concevoir et adapter une base de données (héritage, réflexivité, contraintes)</li>
+                            <li>Programmer en client/serveur (Transact-SQL : PS, déclencheurs, vues, fonctions)</li>
+                            <li>Migrer une base de données entre SGBD (MySQL → SQL Server)</li>
+                            <li>Utiliser un framework MVC (CodeIgniter)</li>
+                            <li>Mettre en place des composants dans une architecture applicative (modèles, vues, contrôleurs, routage, API)</li>
+                            <li>Sécuriser une application (authentification multi-rôles, hashage, JWT)</li>
+                            <li>Mettre à disposition des utilisateurs un service informatique</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AP4 - Application mobile Android -->
+            <div class="projet-details" id="ap4-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : AP4 — Application mobile Android (Cas LocDVD)</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Formation Android sur le cas LocDVD et application à l'activité de l'AP4 (Maison de la Culture)</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Conception et développement d'une application mobile native Android (Java / Android Studio) à partir du cas pédagogique <strong>LocDVD</strong> (location de films par catégories), puis adaptation à l'activité choisie pour l'AP4. La base de données de l'AP3 est conservée et exploitée à distance via une API REST consommée avec <strong>Retrofit</strong>.</td>
+                            </tr>
+                            <tr>
+                                <th>Application à réaliser</th>
+                                <td>
+                                    <strong>Accès public :</strong>
+                                    <ul style="margin:0 0 0.5rem 1.2rem; padding:0;">
+                                        <li>Présentation de la structure d'accueil (entreprise, association, club…)</li>
+                                        <li>Menus de navigation adaptés à l'activité</li>
+                                        <li>Consultation des catégories et des membres d'une catégorie</li>
+                                        <li>Fiche de profil détaillée d'un membre</li>
+                                    </ul>
+                                    <strong>Accès privé :</strong>
+                                    <ul style="margin:0; padding-left:1.2rem;">
+                                        <li>Vue d'authentification (login + mot de passe)</li>
+                                        <li>Inscription / désinscription à un évènement</li>
+                                        <li>Modification de la fiche de profil</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Planning sur 7 séances</th>
+                                <td>
+                                    <ul style="margin:0; padding-left:1.2rem;">
+                                        <li><strong>S1</strong> : présentation du contexte LocDVD, installation et test d'Android Studio (TP1, TP2)</li>
+                                        <li><strong>S2</strong> : Listener, AlertDialog, Activité et Intent (TP3, TP4)</li>
+                                        <li><strong>S3-S4</strong> : communication entre activités, gestion des intents avec retour (TP5)</li>
+                                        <li><strong>S5</strong> : ListView avec tableau, fichier XML et fichier JSON (TP6a, TP6b, TP6c)</li>
+                                        <li><strong>S5-S6</strong> : connexion à une BDD centrale SQL Server via API REST + authentification (TP7, TP8)</li>
+                                        <li><strong>S7</strong> : documentation, publication sur le serveur de production pour l'examen E4 (CCF)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Outils &amp; technologies</th>
+                                <td>
+                                    <strong>IDE :</strong> Android Studio (Otter 2 Feature Drop, 2025.2)<br>
+                                    <strong>Langage :</strong> Java<br>
+                                    <strong>SDK :</strong> Android 7.0 Nougat (API 24, min) / Android 14.0 UpsideDownCake (API 34, compilation)<br>
+                                    <strong>Émulateur :</strong> AVD (Android Virtual Device) — Medium Phone API 24<br>
+                                    <strong>UI :</strong> ConstraintLayout, LinearLayout, ListView, RecyclerView, ProgressBar, Toast, AlertDialog<br>
+                                    <strong>Données :</strong> Tableaux Java, XML (XmlPullParser), JSON (JSONArray / JSONObject)<br>
+                                    <strong>API REST :</strong> Retrofit 2.9 + GsonConverterFactory<br>
+                                    <strong>Backend :</strong> API PHP / MySQL ou SQL Server (réutilisation BDD AP3)<br>
+                                    <strong>Versioning :</strong> Git
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Architecture applicative</th>
+                                <td>
+                                    <pre style="background:#f4f4f4; padding:0.5rem; font-size:0.85em; overflow-x:auto; margin:0.3rem 0;">[APPLICATION ANDROID]
+  ├─ Activités (UI / layouts XML)
+  ├─ Modèles (DvdModel, DvdResponse)
+  ├─ Adapter (DvdRecyclerAdapter / ArrayAdapter)
+  └─ Couche réseau (Retrofit + ApiService)
+            ↓ HTTP (GET/POST + JSON)
+[SERVEUR APACHE — PHP (PDO)]
+            ↓
+[BASE DE DONNÉES CENTRALE (SQL Server)]</pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Règles de développement</th>
+                                <td>
+                                    <ul style="margin:0; padding-left:1.2rem;">
+                                        <li>Notation <strong>Pascal</strong> pour les classes (ex: <code>LigneCommande</code>)</li>
+                                        <li>Notation <strong>Camel</strong> pour les méthodes et variables (ex: <code>uneQuantite</code>)</li>
+                                        <li>Méthodes get/set pour l'accès aux variables privées</li>
+                                        <li>JavaDoc obligatoire sur toutes les méthodes publiques</li>
+                                        <li>XML : minuscules + tirets bas, identifiants préfixés par le nom du fichier (ex: <code>connexion_authentifier</code>)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Lycée CCI de Nîmes</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Atelier de Professionnalisation 4 (AP4) — BTS SIO 2ème année option SLAM — Année 2025/2026</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail individuel avec suivi par les enseignants (H. Kallal / G. Vidal). Évaluation par la grille des TPs (Interfaces, Listener, Activités/Intent, Communication, ListView/Adapter, API SQL Server, Authentification).</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/ap4-schema.jpg" alt="Schéma du projet AP4">
+                        </div>
+                        <div class="details-links">
+                            <h3>Sujet officiel</h3>
+                            <ul>
+                                <li><i class="fas fa-file-pdf"></i> Sujet AP4 — Cas LocDVD &amp; application à l'activité (Lycée CCI Nîmes) — <a href="documents/ap4/AP4_Sujet_LocDVD.pdf" download>Télécharger le PDF</a></li>
+                            </ul>
+                            <h3 style="margin-top:1rem;">TPs Android</h3>
+                            <ul>
+                                <li><i class="fas fa-cog"></i> TP1 — Installation et création du projet Android Studio — <a href="documents/ap4/AP4_TP1_Installation_AndroidStudio.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-mobile-alt"></i> TP2 — Création de l'interface (boutons, menus, sous-menus) — <a href="documents/ap4/AP4_TP2_Interface.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-bullhorn"></i> TP3 — Interaction avec l'interface (Listener, AlertDialog) — <a href="documents/ap4/AP4_TP3_Listener.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-arrows-alt"></i> TP4 — Gestion des activités et des intents — <a href="documents/ap4/AP4_TP4_Activite_Intent.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-exchange-alt"></i> TP5 — Communication entre activités — <a href="documents/ap4/AP4_TP5_Communication.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-list"></i> TP6a — ListView et tableau de chaînes — <a href="documents/ap4/AP4_TP6a_ListView_Tableau.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-code"></i> TP6b — ListView et fichier XML — <a href="documents/ap4/AP4_TP6b_ListView_XML.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-file-code"></i> TP6c — ListView et données JSON — <a href="documents/ap4/AP4_TP6c_ListView_JSON.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-cloud"></i> TP7 — Consommation d'une API REST avec Retrofit — <a href="documents/ap4/AP4_TP7_Retrofit_API_REST.pdf" download>Télécharger le PDF</a></li>
+                            </ul>
+                            <h3 style="margin-top:1rem;">Liens externes</h3>
+                            <ul>
+                                <li><a href="https://github.com/IhabBenmahrouz" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Développer une application mobile native (Android / Java)</li>
+                            <li>Adapter une interface utilisateur aux contraintes mobiles</li>
+                            <li>Intégrer une application avec des web services (API REST, Retrofit)</li>
+                            <li>Exploiter des données au format XML et JSON</li>
+                            <li>Mettre en place une architecture client-serveur (Android ↔ PHP ↔ SQL Server)</li>
+                            <li>Sécuriser une application mobile (authentification)</li>
+                            <li>Mettre à disposition des utilisateurs un service informatique</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 2ème année -->
+            <div class="projet-details" id="stage2-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Stage de 2ème année — Alphatis Nîmes-Livraison</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Gestion simplifiée des tournées et du stock — Projet « Alphatis Nîmes-Livraison »</td>
+                            </tr>
+                            <tr>
+                                <th>Réalisation</th>
+                                <td>
+                                    <p>Conception et développement d'une application web (CodeIgniter / MySQL / Bootstrap) pour centraliser la gestion des stocks, des commandes et des livraisons d'Alphatis depuis l'entrepôt de Nîmes.</p>
+                                    <p><strong>Ce que j'ai fait :</strong></p>
+                                    <ul style="margin:0; padding-left:1.2rem;">
+                                        <li>Conception du schéma SQL et des maquettes (Admin / Livreur)</li>
+                                        <li>Développement du back-office Admin : CRUD complet sur les produits, avec alerte visuelle si stock &lt; seuil</li>
+                                        <li>Développement du front-office Livreur : tableau de bord des commandes et changement de statut « En attente / En préparation / Livré »</li>
+                                        <li>Intégration de l'API Leaflet (OpenStreetMap) pour cartographier les adresses de livraison</li>
+                                        <li>Mise en place de l'authentification sécurisée (login + mot de passe haché)</li>
+                                        <li>Gestion des sessions et des rôles : Admin (accès total) / Livreur (consultation + statut)</li>
+                                        <li>Tests, rédaction du rapport technique et du mode d'emploi utilisateur</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>Du 19 janvier au 20 février 2026 (5 semaines)</td>
+                            </tr>
+                            <tr>
+                                <th>Organisme d'accueil</th>
+                                <td>SAS <strong>Alpha Distribution / Alphatis</strong> — 690 rue Le Corbusier, 30000 Nîmes</td>
+                            </tr>
+                            <tr>
+                                <th>Tuteur en entreprise</th>
+                                <td>M. Nabil KADRI — Président délégué</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Stage obligatoire de 2ème année — BTS SIO option SLAM</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/stage2-schema.jpg" alt="Schéma du projet de stage 2">
+                        </div>
+                        <div class="details-links">
+                            <h3>Document</h3>
+                            <ul>
+                                <li><i class="fas fa-file-pdf"></i> Projet « Alphatis Nîmes-Livraison » — Gestion simplifiée des tournées et du stock — <a href="documents/stages/stage2/Stage2_Alphatis_Nimes_Livraison.pdf" download>Télécharger le PDF</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engagement étudiant : Association Sensibilisation à l'IA -->
+            <div class="projet-details" id="engagement1-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Association « Sensibilisation à l'IA »</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Création et présidence de l'association loi 1901 « Sensibilisation à l'IA » (RNA W302023332)</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Création d'une association régie par la loi du 1er juillet 1901 ayant pour objet de collecter, vérifier, centraliser et diffuser des informations fiables relatives à l'intelligence artificielle, afin de promouvoir un usage responsable, modéré et éclairé de l'IA auprès du grand public. Sensibilisation aux enjeux éthiques, sociaux et juridiques liés au numérique. Pilotage de l'ensemble des démarches : rédaction des statuts (13 articles dont un article RGPD), tenue de l'assemblée générale constitutive, dépôt en sous-préfecture, obtention du récépissé officiel.</td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>Avril 2026 — en cours</td>
+                            </tr>
+                            <tr>
+                                <th>Rôle</th>
+                                <td>Président — fondateur et signataire des statuts</td>
+                            </tr>
+                            <tr>
+                                <th>Outils utilisés</th>
+                                <td>Cerfa n°13973*04, formulaire des dirigeants, rédaction de statuts conformes RGPD, conduite de réunion (AG constitutive)</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Nîmes (30000) — siège social : 258 rue de la Chrysalide</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Engagement étudiant / Association loi 1901</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Conduite de projet collectif avec un bureau de deux membres (président et trésorière), démarches administratives auprès de la Sous-Préfecture d'Alès</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/engagement1-schema.jpg" alt="Association Sensibilisation à l'IA">
+                        </div>
+                        <div class="details-links">
+                            <h3>Pièces justificatives</h3>
+                            <ul>
+                                <li><i class="fas fa-file-pdf"></i> Récépissé de déclaration (Sous-Préfecture d'Alès) — <a href="documents/engagement/recepisse-prefecture.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-file-pdf"></i> Déclaration de création (Cerfa 13973*04) — <a href="documents/engagement/Cerfa-13973%20(1).pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-file-pdf"></i> Liste des dirigeants — <a href="documents/engagement/CR-ListeDirigeant%20(1).pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-file-pdf"></i> Procès-verbal de l'assemblée constitutive — <a href="documents/engagement/PV_compressed.pdf" download>Télécharger le PDF</a></li>
+                                <li><i class="fas fa-file-pdf"></i> Statuts de l'association — <a href="documents/engagement/Statuts_compressed.pdf" download>Télécharger le PDF</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Organiser son développement professionnel</li>
+                            <li>Travailler en mode projet</li>
+                            <li>Communiquer avec les acteurs du projet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet personnel -->
+            <div class="projet-details" id="perso1-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Application de gestion de tâches</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Développement d'une application web de gestion de tâches</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Conception et développement d'une application web permettant de gérer des tâches personnelles ou professionnelles. Fonctionnalités de création, modification, suppression et classement des tâches avec stockage des données dans le localStorage du navigateur.</td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>Décembre 2024</td>
+                            </tr>
+                            <tr>
+                                <th>Outils utilisés</th>
+                                <td>HTML5, CSS3, JavaScript, VS Code, Git</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Domicile</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Projet personnel</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail individuel</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/perso1-schema.jpg" alt="Capture d'écran de l'application">
+                        </div>
+                        <div class="details-links">
+                            <h3>Liens utiles</h3>
+                            <ul>
+                                <li><a href="https://github.com/votre-compte/taskmanager" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a></li>
+                                <li><a href="projets/perso1/" target="_blank"><i class="fas fa-external-link-alt"></i> Application en ligne</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Concevoir et développer une solution applicative</li>
+                            <li>Exploiter les technologies Web</li>
+                            <li>Organiser son développement professionnel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Portfolio<span>SIO</span></h2>
+                <p>BTS Services Informatiques aux Organisations</p>
+            </div>
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="veille.html">Veille</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                 <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i>ihabbenmahrouz@gmail.com</p>
+                <p><i class="fas fa-phone"></i>07 67 00 27 92</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ihab-benmahrouz-27a991337/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/IhabBenmahrouz" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/IhabBenmahrouz" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ihabbenmahrouz/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61589297452883" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 - Portfolio BTS SIO - Tous droits réservés &nbsp;|&nbsp; <a href="mentions-legales.html" style="color:inherit;text-decoration:underline;">Mentions légales</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/rgpd.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filtrage des projets
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const projetCards = document.querySelectorAll('.projet-card');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Retirer la classe active de tous les boutons
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Ajouter la classe active au bouton cliqué
+                    button.classList.add('active');
+                    
+                    // Filtrer les projets
+                    const category = button.getAttribute('data-category');
+                    
+                    projetCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Gestion des modals de détails
+            const detailsButtons = document.querySelectorAll('.voir-details');
+            const detailsOverlay = document.getElementById('projet-details-overlay');
+            const detailsModals = document.querySelectorAll('.projet-details');
+            const closeButtons = document.querySelectorAll('.close-details');
+            
+            detailsButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.getAttribute('data-target');
+                    
+                    // Afficher l'overlay
+                    detailsOverlay.style.display = 'flex';
+                    
+                    // Masquer tous les modals
+                    detailsModals.forEach(modal => {
+                        modal.style.display = 'none';
+                    });
+                    
+                    // Afficher le modal cible
+                    document.getElementById(targetId).style.display = 'block';
+                    
+                    // Bloquer le défilement de la page
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            // Fermeture des modals
+            closeButtons.forEach(button => {
+                button.addEventListener('click', closeModal);
+            });
+            
+            detailsOverlay.addEventListener('click', (e) => {
+                if (e.target === detailsOverlay || e.target.hasAttribute('data-close')) {
+                    closeModal();
+                }
+            });
+            
+            function closeModal() {
+                detailsOverlay.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+            
+            // Fermeture avec la touche Échap
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
