@@ -168,6 +168,111 @@
     object-fit: cover;
 }
 
+/* Illustration Évolution Robotique (timeline) */
+.evolution-illustration {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1e40af 100%) !important;
+    border-radius: 14px !important;
+    padding: 1.5rem 1.2rem !important;
+    color: #ffffff !important;
+    height: 100% !important;
+    box-shadow: 0 12px 30px rgba(30, 64, 175, 0.3) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.evolution-illustration::before {
+    content: '' !important;
+    position: absolute !important;
+    top: -30%; left: -30% !important;
+    width: 160% !important;
+    height: 60% !important;
+    background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%) !important;
+    pointer-events: none !important;
+}
+
+.evolution-title {
+    text-align: center !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    margin-bottom: 1.2rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    background: linear-gradient(90deg, #fbbf24, #fff, #10b981) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.evolution-timeline {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.7rem !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.evolution-step {
+    display: grid !important;
+    grid-template-columns: 50px 60px 1fr !important;
+    gap: 0.7rem !important;
+    align-items: center !important;
+    padding: 0.6rem !important;
+    background: rgba(255,255,255,0.06) !important;
+    border-radius: 8px !important;
+    border-left: 3px solid rgba(255,255,255,0.2) !important;
+    transition: all 0.3s ease !important;
+}
+
+.evolution-step:hover {
+    background: rgba(255,255,255,0.12) !important;
+    border-left-color: #fbbf24 !important;
+    transform: translateX(4px) !important;
+}
+
+.evolution-icon {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1.2rem !important;
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+}
+
+.evolution-year {
+    font-weight: 800 !important;
+    font-size: 1.05rem !important;
+    color: #fbbf24 !important;
+    text-align: center !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4) !important;
+}
+
+.evolution-label {
+    font-weight: 700 !important;
+    font-size: 0.92rem !important;
+    color: #fff !important;
+    margin-bottom: 2px !important;
+}
+
+.evolution-step:nth-child(n+1) > div:nth-child(3) {
+    grid-column: 3 !important;
+}
+
+.evolution-desc {
+    font-size: 0.78rem !important;
+    color: rgba(255,255,255,0.78) !important;
+    line-height: 1.4 !important;
+}
+
+.evolution-step > div:nth-child(3) {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
 .sujet-description p {
     margin-bottom: var(--spacing-sm);
     line-height: 1.7;
@@ -191,19 +296,48 @@
     background-color: var(--primary-color);
 }
 
+/* Section par année */
+.articles-year-section {
+    margin-top: var(--spacing-lg);
+}
+
+.articles-year {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+    padding: 0.5rem 1rem;
+    background: linear-gradient(90deg, rgba(52, 152, 219, 0.12), transparent);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.articles-year .year-badge {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
 .articles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-md);
 }
 
 .article-card {
-    background-color: #f8f9fa;
+    background-color: #fff;
     border-radius: var(--border-radius-md);
     padding: var(--spacing-md);
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-normal);
     border-left: 4px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
 }
 
 .article-card:hover {
@@ -211,22 +345,64 @@
     box-shadow: var(--shadow-md);
 }
 
-.article-date {
-    font-size: 0.9rem;
-    color: var(--grey-color);
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
     margin-bottom: var(--spacing-xs);
+    font-size: 0.85rem;
+    color: var(--grey-color);
+}
+
+.article-source {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.lang-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.lang-badge.lang-fr {
+    background-color: #0055A4;
+}
+
+.lang-badge.lang-en {
+    background-color: #B22234;
 }
 
 .article-card h4 {
     margin-bottom: var(--spacing-sm);
     font-size: 1.1rem;
     color: var(--dark-color);
+    line-height: 1.4;
 }
 
-.article-card p {
+.article-author {
+    font-size: 0.9rem;
+    color: var(--grey-color);
+    font-style: italic;
+    margin-bottom: var(--spacing-xs);
+}
+
+.article-author strong {
+    font-style: normal;
+    color: var(--dark-color);
+}
+
+.article-card p.article-summary {
     margin-bottom: var(--spacing-sm);
     font-size: 0.95rem;
     color: var(--grey-color);
+    line-height: 1.55;
+    flex-grow: 1;
 }
 
 .article-link {
@@ -236,10 +412,564 @@
     font-weight: 500;
     color: var(--primary-color);
     transition: color var(--transition-fast);
+    margin-top: auto;
 }
 
 .article-link:hover {
     color: var(--primary-dark);
+}
+
+/* ===== TOP 10 ENTREPRISES ROBOTIQUES ===== */
+.veille-top-companies {
+    margin: 0 0 4rem 0 !important;
+    background: #ffffff !important;
+    padding: 2rem !important;
+    border: 2px solid #e5e7eb !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12) !important;
+    display: block !important;
+}
+
+.veille-top-companies h2 {
+    color: #1e3a8a !important;
+    margin-bottom: 1rem !important;
+}
+
+.veille-top-companies > p {
+    color: #475569 !important;
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+    line-height: 1.6 !important;
+}
+
+.companies-table-wrapper {
+    overflow-x: auto !important;
+    border-radius: 12px !important;
+    border: 2px solid #cbd5e1 !important;
+    background: #ffffff !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+    display: block !important;
+}
+
+.companies-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    font-size: 0.93rem !important;
+    min-width: 950px !important;
+    background: #ffffff !important;
+    color: #1e293b !important;
+}
+
+.companies-table thead {
+    background: #1e3a8a !important;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3498db 50%, #2ecc71 100%) !important;
+    color: #ffffff !important;
+}
+
+.companies-table thead th {
+    padding: 1.1rem 1rem !important;
+    text-align: left !important;
+    font-weight: 700 !important;
+    font-size: 0.82rem !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+    color: #ffffff !important;
+    border-bottom: 3px solid rgba(255,255,255,0.25) !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2) !important;
+}
+
+.companies-table thead th:first-child {
+    width: 70px !important;
+    text-align: center !important;
+}
+
+.companies-table thead th:last-child {
+    text-align: right !important;
+}
+
+.companies-table tbody tr {
+    border-bottom: 1px solid #e2e8f0 !important;
+    background: #ffffff !important;
+    transition: all 0.25s ease !important;
+}
+
+.companies-table tbody tr:nth-child(even) {
+    background-color: #f8fafc !important;
+}
+
+.companies-table tbody tr:hover {
+    background: #eff6ff !important;
+    box-shadow: inset 4px 0 0 #3498db !important;
+}
+
+.companies-table tbody td {
+    padding: 1rem !important;
+    vertical-align: middle !important;
+    border: none !important;
+}
+
+.companies-table .col-rank {
+    text-align: center !important;
+    font-weight: 800 !important;
+    font-size: 1.2rem !important;
+}
+
+.companies-table .col-rank .rank-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    background: #e2e8f0 !important;
+    color: #475569 !important;
+    border: 2px solid #cbd5e1 !important;
+}
+
+.companies-table tbody tr:nth-child(1) .rank-badge {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+    color: #ffffff !important;
+    border-color: #f59e0b !important;
+    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.5) !important;
+}
+
+.companies-table tbody tr:nth-child(2) .rank-badge {
+    background: linear-gradient(135deg, #cbd5e1 0%, #94a3b8 100%) !important;
+    color: #ffffff !important;
+    border-color: #94a3b8 !important;
+    box-shadow: 0 4px 12px rgba(148, 163, 184, 0.5) !important;
+}
+
+.companies-table tbody tr:nth-child(3) .rank-badge {
+    background: linear-gradient(135deg, #d97706 0%, #92400e 100%) !important;
+    color: #ffffff !important;
+    border-color: #92400e !important;
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.5) !important;
+}
+
+.companies-table .col-company {
+    font-weight: 700 !important;
+    color: #1e293b !important;
+    font-size: 1rem !important;
+}
+
+.companies-table .col-country {
+    white-space: nowrap !important;
+    font-weight: 500 !important;
+    color: #475569 !important;
+}
+
+.companies-table .col-marketcap {
+    font-weight: 700 !important;
+    color: #16a34a !important;
+    white-space: nowrap !important;
+    text-align: right !important;
+    font-size: 0.98rem !important;
+}
+
+.companies-table .col-revenue {
+    color: #475569 !important;
+    white-space: nowrap !important;
+    font-weight: 500 !important;
+}
+
+.companies-table .col-ceo {
+    color: #475569 !important;
+    font-weight: 500 !important;
+}
+
+.companies-table .col-hq {
+    color: #64748b !important;
+    font-size: 0.9rem !important;
+}
+
+.country-flag {
+    margin-right: 6px !important;
+    font-size: 1.25rem !important;
+    vertical-align: middle !important;
+}
+
+.companies-source {
+    margin-top: 1.5rem !important;
+    padding: 1rem 1.2rem !important;
+    background: #f1f5f9 !important;
+    border-left: 4px solid #3498db !important;
+    border-radius: 8px !important;
+    font-size: 0.88rem !important;
+    color: #475569 !important;
+    line-height: 1.7 !important;
+}
+
+.companies-source strong {
+    color: #1e293b !important;
+    margin-right: 0.3rem !important;
+}
+
+.companies-source a {
+    color: #3498db !important;
+    text-decoration: underline !important;
+    transition: color 0.2s !important;
+}
+
+.companies-source a:hover {
+    color: #1e3a8a !important;
+}
+
+@media screen and (max-width: 768px) {
+    .companies-table {
+        font-size: 0.8rem !important;
+    }
+    .companies-table thead th,
+    .companies-table tbody td {
+        padding: 0.7rem 0.6rem !important;
+    }
+    .companies-table thead th {
+        font-size: 0.7rem !important;
+        letter-spacing: 0.5px !important;
+    }
+    .companies-table .col-rank .rank-badge {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+/* ===== SALONS & ÉVÉNEMENTS ROBOTIQUE ===== */
+.veille-events {
+    margin-bottom: 4rem !important;
+    background: #ffffff !important;
+    padding: 2rem !important;
+    border: 2px solid #e5e7eb !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.10) !important;
+}
+
+.veille-events h2 {
+    color: #1e3a8a !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.veille-events > p.section-intro {
+    color: #475569 !important;
+    margin-bottom: 1.8rem !important;
+    line-height: 1.6 !important;
+}
+
+.events-subheading {
+    font-size: 1.3rem !important;
+    color: #1e3a8a !important;
+    margin: 2rem 0 1rem 0 !important;
+    padding: 0.6rem 1rem !important;
+    background: linear-gradient(90deg, rgba(52, 152, 219, 0.12), transparent) !important;
+    border-left: 4px solid #3498db !important;
+    border-radius: 4px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.6rem !important;
+}
+
+.events-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+    gap: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.event-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
+    border: 2px solid #e5e7eb !important;
+    border-radius: 12px !important;
+    padding: 1.4rem !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04) !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.event-card::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 4px !important;
+    background: linear-gradient(90deg, #3498db, #2ecc71) !important;
+}
+
+.event-card:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 28px rgba(52, 152, 219, 0.15) !important;
+    border-color: #3498db !important;
+}
+
+.event-card .event-flag {
+    font-size: 1.6rem !important;
+    margin-right: 6px !important;
+}
+
+.event-card h4 {
+    color: #1e293b !important;
+    font-size: 1.15rem !important;
+    margin-bottom: 0.4rem !important;
+    font-weight: 700 !important;
+}
+
+.event-card .event-location {
+    color: #64748b !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 0.8rem !important;
+    font-style: italic !important;
+}
+
+.event-card .event-dates {
+    display: inline-block !important;
+    background: #eff6ff !important;
+    color: #1e40af !important;
+    padding: 4px 12px !important;
+    border-radius: 20px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.8rem !important;
+    border: 1px solid #bfdbfe !important;
+}
+
+.event-card .event-stats {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem !important;
+    margin: 0.8rem 0 !important;
+}
+
+.event-card .event-stat {
+    background: #f1f5f9 !important;
+    padding: 0.5rem !important;
+    border-radius: 6px !important;
+    text-align: center !important;
+    font-size: 0.8rem !important;
+}
+
+.event-card .event-stat strong {
+    display: block !important;
+    color: #1e3a8a !important;
+    font-size: 1.1rem !important;
+}
+
+.event-card .event-brands {
+    margin-top: 0.6rem !important;
+    font-size: 0.88rem !important;
+    color: #475569 !important;
+    line-height: 1.5 !important;
+}
+
+.event-card .event-brands strong {
+    color: #1e293b !important;
+}
+
+.event-card .event-organizer {
+    margin-top: 0.7rem !important;
+    padding-top: 0.7rem !important;
+    border-top: 1px dashed #cbd5e1 !important;
+    font-size: 0.82rem !important;
+    color: #64748b !important;
+}
+
+/* Podium */
+.podium-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 1rem !important;
+    margin: 1.5rem 0 !important;
+    align-items: end !important;
+}
+
+.podium-step {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
+    border: 2px solid #e5e7eb !important;
+    border-radius: 12px !important;
+    padding: 1.2rem !important;
+    text-align: center !important;
+    position: relative !important;
+    transition: transform 0.3s ease !important;
+}
+
+.podium-step:hover {
+    transform: scale(1.03) !important;
+}
+
+.podium-step.gold {
+    border-color: #f59e0b !important;
+    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.3) !important;
+    order: 2 !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.podium-step.silver {
+    border-color: #94a3b8 !important;
+    box-shadow: 0 6px 15px rgba(148, 163, 184, 0.25) !important;
+    order: 1 !important;
+}
+
+.podium-step.bronze {
+    border-color: #d97706 !important;
+    box-shadow: 0 6px 15px rgba(217, 119, 6, 0.25) !important;
+    order: 3 !important;
+}
+
+.podium-medal {
+    font-size: 2.5rem !important;
+    margin-bottom: 0.3rem !important;
+    display: block !important;
+}
+
+.podium-step.gold .podium-medal { font-size: 3.5rem !important; }
+
+.podium-step h5 {
+    color: #1e293b !important;
+    margin-bottom: 0.4rem !important;
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+}
+
+.podium-step .podium-detail {
+    font-size: 0.85rem !important;
+    color: #64748b !important;
+    line-height: 1.5 !important;
+}
+
+.podium-step .podium-medals-count {
+    display: inline-block !important;
+    background: #1e3a8a !important;
+    color: #fff !important;
+    padding: 3px 10px !important;
+    border-radius: 12px !important;
+    font-size: 0.78rem !important;
+    margin-top: 0.5rem !important;
+    font-weight: 600 !important;
+}
+
+/* Records */
+.records-list {
+    background: #f8fafc !important;
+    border-left: 4px solid #f59e0b !important;
+    padding: 1rem 1.2rem !important;
+    border-radius: 8px !important;
+    margin: 1rem 0 !important;
+}
+
+.records-list h5 {
+    color: #92400e !important;
+    margin-bottom: 0.6rem !important;
+    font-size: 1rem !important;
+}
+
+.records-list ul {
+    margin: 0 !important;
+    padding-left: 1.2rem !important;
+}
+
+.records-list ul li {
+    color: #475569 !important;
+    margin-bottom: 0.4rem !important;
+    font-size: 0.92rem !important;
+}
+
+.records-list ul li strong {
+    color: #1e293b !important;
+}
+
+/* Documentaires & Presse FR */
+.media-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 1rem 0 !important;
+}
+
+.media-list li {
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    padding: 1rem 1.2rem !important;
+    border-radius: 8px !important;
+    margin-bottom: 0.7rem !important;
+    transition: all 0.2s ease !important;
+}
+
+.media-list li:hover {
+    border-color: #3498db !important;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.1) !important;
+}
+
+.media-list li .media-channel {
+    display: inline-block !important;
+    background: #1e3a8a !important;
+    color: #fff !important;
+    padding: 2px 10px !important;
+    border-radius: 4px !important;
+    font-size: 0.78rem !important;
+    font-weight: 600 !important;
+    margin-right: 8px !important;
+    letter-spacing: 0.5px !important;
+}
+
+.media-list li .media-title {
+    font-weight: 600 !important;
+    color: #1e293b !important;
+}
+
+.media-list li .media-meta {
+    display: block !important;
+    margin-top: 0.4rem !important;
+    color: #64748b !important;
+    font-size: 0.85rem !important;
+}
+
+/* Future events callout */
+.future-events {
+    background: linear-gradient(135deg, #ecfdf5 0%, #f0fdfa 100%) !important;
+    border: 2px solid #10b981 !important;
+    border-radius: 12px !important;
+    padding: 1.4rem !important;
+    margin-top: 1.5rem !important;
+}
+
+.future-events h4 {
+    color: #065f46 !important;
+    margin-bottom: 0.8rem !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+}
+
+.future-events ul {
+    margin: 0 !important;
+    padding-left: 1.4rem !important;
+}
+
+.future-events ul li {
+    color: #065f46 !important;
+    margin-bottom: 0.5rem !important;
+    line-height: 1.6 !important;
+}
+
+.future-events ul li strong {
+    color: #047857 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .events-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .podium-wrapper {
+        grid-template-columns: 1fr !important;
+    }
+    .podium-step.gold,
+    .podium-step.silver,
+    .podium-step.bronze {
+        order: initial !important;
+    }
 }
 
 /* ===== VEILLE SECONDAIRE ===== */

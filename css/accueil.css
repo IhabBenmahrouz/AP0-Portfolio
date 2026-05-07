@@ -75,7 +75,7 @@
     height: 300px;
     border-radius: var(--border-radius-full);
     background-color: white;
-    background-image: url('../images/profile-placeholder.jpg');
+    background-image: url('../images/profile-placeholder.png');
     background-size: cover;
     background-position: center;
     border: 5px solid white;
