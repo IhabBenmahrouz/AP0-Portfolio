@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Glyphe </> blanc affiché dans la pastille verte de la photo de profil (accueil) -->
+  <g fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="11,10 5,16 11,22"/>
+    <polyline points="21,10 27,16 21,22"/>
+    <line x1="18" y1="8" x2="14" y2="24"/>
+  </g>
+</svg>

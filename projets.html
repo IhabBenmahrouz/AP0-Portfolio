@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projets BTS SIO d'Ihab Benmahrouz : ateliers de professionnalisation (AP0 à AP4), stages, projets personnels et engagement étudiant.">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <title>Portfolio BTS SIO - Projets</title>
+    <!-- Open Graph / partage sur les réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Portfolio BTS SIO — Ihab Benmahrouz">
+    <meta property="og:title" content="Portfolio BTS SIO - Projets">
+    <meta property="og:description" content="Projets BTS SIO d'Ihab Benmahrouz : ateliers de professionnalisation (AP0 à AP4), stages, projets personnels et engagement étudiant.">
+    <meta property="og:image" content="images/profile-placeholder.png">
+    <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/projets.css">
+    <link rel="stylesheet" href="css/projets.css?v=20260613-modal">
     <!-- Font Awesome pour les icônes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/rgpd.css">
 </head>
 <body>
@@ -54,8 +64,26 @@
                 <div class="projets-grid" id="projets-grid">
                     <!-- AP0 - Portfolio -->
                     <div class="projet-card" data-category="ap" id="ap0">
-                        <div class="projet-image" style="background-image: url('images/projet-portfolio.jpg');">
+                        <div class="projet-image">
                             <div class="projet-badge">AP0</div>
+                            <svg class="projet-illus" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Portfolio web">
+                                <defs><linearGradient id="pg0" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3498db"/><stop offset="1" stop-color="#2ecc71"/></linearGradient></defs>
+                                <rect width="400" height="200" fill="url(#pg0)"/>
+                                <g class="a-float">
+                                    <rect x="118" y="52" width="164" height="104" rx="8" fill="#ffffff" opacity="0.96"/>
+                                    <rect x="118" y="66" width="164" height="8" fill="#1e293b"/>
+                                    <rect x="118" y="52" width="164" height="22" rx="8" fill="#1e293b"/>
+                                    <circle cx="132" cy="63" r="3.2" fill="#ef4444"/><circle cx="144" cy="63" r="3.2" fill="#f59e0b"/><circle cx="156" cy="63" r="3.2" fill="#22c55e"/>
+                                    <rect x="134" y="88" width="58" height="7" rx="3.5" fill="#3498db"/>
+                                    <rect x="134" y="104" width="112" height="7" rx="3.5" fill="#cbd5e1"/>
+                                    <rect x="134" y="120" width="84" height="7" rx="3.5" fill="#cbd5e1"/>
+                                    <rect x="134" y="136" width="46" height="7" rx="3.5" fill="#2ecc71"/>
+                                </g>
+                                <g class="a-pulse" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="312,82 326,96 312,110"/>
+                                    <polyline points="356,82 342,96 356,110"/>
+                                </g>
+                            </svg>
                         </div>
                         <div class="projet-content">
                             <h3>Site portefeuille de compétences</h3>
@@ -71,8 +99,27 @@
 
                     <!-- AP1 - Site vitrine activité -->
                     <div class="projet-card" data-category="ap" id="ap1">
-                        <div class="projet-image" style="background-image: url('images/projet-maison-culture.jpg');">
+                        <div class="projet-image">
                             <div class="projet-badge">AP1</div>
+                            <svg class="projet-illus" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Site culturel">
+                                <defs><linearGradient id="pg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs>
+                                <rect width="400" height="200" fill="url(#pg1)"/>
+                                <g class="a-float" fill="#ffffff">
+                                    <polygon points="150,72 250,72 200,44"/>
+                                    <rect x="150" y="72" width="100" height="10"/>
+                                    <rect x="156" y="86" width="9" height="56"/>
+                                    <rect x="178" y="86" width="9" height="56"/>
+                                    <rect x="200" y="86" width="9" height="56"/>
+                                    <rect x="222" y="86" width="9" height="56"/>
+                                    <rect x="244" y="86" width="9" height="56"/>
+                                    <rect x="146" y="146" width="112" height="10"/>
+                                </g>
+                                <g class="a-pulse">
+                                    <circle cx="304" cy="98" r="22" fill="#ffffff"/>
+                                    <circle cx="296" cy="94" r="3" fill="#8b5cf6"/><circle cx="312" cy="94" r="3" fill="#8b5cf6"/>
+                                    <path d="M293,106 Q304,116 315,106" stroke="#8b5cf6" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                </g>
+                            </svg>
                         </div>
                         <div class="projet-content">
                             <h3>Site vitrine — Activité culturelle (Maison de la Culture)</h3>
@@ -89,8 +136,30 @@
 
                     <!-- AP2 - Site dynamique -->
                     <div class="projet-card" data-category="ap" id="ap2">
-                        <div class="projet-image" style="background-image: url('images/projet-database.jpg');">
+                        <div class="projet-image">
                             <div class="projet-badge">AP2</div>
+                            <svg class="projet-illus" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Base de données dynamique">
+                                <defs><linearGradient id="pg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs>
+                                <rect width="400" height="200" fill="url(#pg2)"/>
+                                <g>
+                                    <rect x="114" y="70" width="92" height="60" fill="#ffffff"/>
+                                    <ellipse cx="160" cy="90" rx="46" ry="13" fill="#c7d2fe"/>
+                                    <ellipse cx="160" cy="110" rx="46" ry="13" fill="#c7d2fe"/>
+                                    <ellipse cx="160" cy="130" rx="46" ry="14" fill="#ffffff"/>
+                                    <ellipse cx="160" cy="70" rx="46" ry="14" fill="#ffffff"/>
+                                </g>
+                                <g class="a-spin" stroke="#ffffff" stroke-width="5" stroke-linecap="round" fill="none">
+                                    <circle cx="304" cy="100" r="20"/>
+                                    <line x1="304" y1="74" x2="304" y2="84"/>
+                                    <line x1="304" y1="116" x2="304" y2="126"/>
+                                    <line x1="278" y1="100" x2="288" y2="100"/>
+                                    <line x1="320" y1="100" x2="330" y2="100"/>
+                                    <line x1="286" y1="82" x2="293" y2="89"/>
+                                    <line x1="315" y1="111" x2="322" y2="118"/>
+                                    <line x1="322" y1="82" x2="315" y2="89"/>
+                                    <line x1="293" y1="111" x2="286" y2="118"/>
+                                </g>
+                            </svg>
                         </div>
                         <div class="projet-content">
                             <h3>Dynamisation du site de l'AP1</h3>
@@ -108,8 +177,28 @@
 
                     <!-- AP3 - Site dynamique avancé -->
                     <div class="projet-card" data-category="ap" id="ap3">
-                        <div class="projet-image" style="background-image: url('images/projet-ap3.jpg');">
+                        <div class="projet-image">
                             <div class="projet-badge">AP3</div>
+                            <svg class="projet-illus" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Migration de base de données">
+                                <defs><linearGradient id="pg3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14b8a6"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs>
+                                <rect width="400" height="200" fill="url(#pg3)"/>
+                                <g fill="#ffffff">
+                                    <rect x="92" y="78" width="64" height="46"/>
+                                    <ellipse cx="124" cy="124" rx="32" ry="10"/>
+                                    <ellipse cx="124" cy="78" rx="32" ry="10"/>
+                                    <ellipse cx="124" cy="100" rx="32" ry="10" fill="#bae6fd"/>
+                                </g>
+                                <g fill="#ffffff">
+                                    <rect x="244" y="78" width="64" height="46"/>
+                                    <ellipse cx="276" cy="124" rx="32" ry="10"/>
+                                    <ellipse cx="276" cy="78" rx="32" ry="10"/>
+                                    <ellipse cx="276" cy="100" rx="32" ry="10" fill="#bae6fd"/>
+                                </g>
+                                <g class="a-slide" stroke="#fde047" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="170" y1="100" x2="226" y2="100"/>
+                                    <polyline points="210,88 228,100 210,112"/>
+                                </g>
+                            </svg>
                         </div>
                         <div class="projet-content">
                             <h3>Maison de la Culture — SQL Server &amp; CodeIgniter</h3>
@@ -126,8 +215,26 @@
 
                     <!-- AP4 - Application mobile Android -->
                     <div class="projet-card" data-category="ap" id="ap4">
-                        <div class="projet-image" style="background-image: url('images/projet-ap4.jpg');">
+                        <div class="projet-image">
                             <div class="projet-badge">AP4</div>
+                            <svg class="projet-illus" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Application mobile Android">
+                                <defs><linearGradient id="pg4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22c55e"/><stop offset="1" stop-color="#15803d"/></linearGradient></defs>
+                                <rect width="400" height="200" fill="url(#pg4)"/>
+                                <g class="a-float">
+                                    <rect x="168" y="44" width="64" height="112" rx="11" fill="#ffffff"/>
+                                    <rect x="176" y="58" width="48" height="74" rx="3" fill="#bbf7d0"/>
+                                    <circle cx="200" cy="145" r="4" fill="#15803d"/>
+                                    <path d="M185,96 a15,15 0 0 1 30,0 z" fill="#15803d"/>
+                                    <circle cx="194" cy="92" r="1.9" fill="#ffffff"/><circle cx="206" cy="92" r="1.9" fill="#ffffff"/>
+                                    <line x1="190" y1="76" x2="195" y2="83" stroke="#15803d" stroke-width="2.4" stroke-linecap="round"/>
+                                    <line x1="210" y1="76" x2="205" y2="83" stroke="#15803d" stroke-width="2.4" stroke-linecap="round"/>
+                                </g>
+                                <g class="a-pulse" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round">
+                                    <path d="M276,116 a16,16 0 0 1 16,-16"/>
+                                    <path d="M276,116 a28,28 0 0 1 28,-28"/>
+                                    <circle cx="276" cy="116" r="2.6" fill="#ffffff" stroke="none"/>
+                                </g>
+                            </svg>
                         </div>
                         <div class="projet-content">
                             <h3>Application mobile Android — Cas LocDVD</h3>
@@ -144,8 +251,23 @@
 
                     <!-- Stage 1ère année -->
                     <div class="projet-card" data-category="stage" id="stage1">
-                        <div class="projet-image" style="background-image: url('images/projet-stage1.jpg');">
+                        <div class="projet-image">
                             <div class="projet-badge">Stage</div>
+                            <svg class="projet-illus" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stage : relance et factures">
+                                <defs><linearGradient id="pg5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f59e0b"/><stop offset="1" stop-color="#ea580c"/></linearGradient></defs>
+                                <rect width="400" height="200" fill="url(#pg5)"/>
+                                <g>
+                                    <rect x="142" y="52" width="78" height="100" rx="6" fill="#ffffff"/>
+                                    <line x1="156" y1="76" x2="206" y2="76" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+                                    <line x1="156" y1="92" x2="206" y2="92" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/>
+                                    <line x1="156" y1="108" x2="190" y2="108" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/>
+                                    <line x1="156" y1="132" x2="178" y2="132" stroke="#ea580c" stroke-width="6" stroke-linecap="round"/>
+                                </g>
+                                <g class="a-float">
+                                    <rect x="226" y="92" width="74" height="52" rx="6" fill="#ffffff"/>
+                                    <polyline points="226,98 263,124 300,98" fill="none" stroke="#ea580c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                            </svg>
                         </div>
                         <div class="projet-content">
                             <h3>Stage de 1ère année — Alpha Distribution</h3>
@@ -162,8 +284,23 @@
 
                     <!-- Stage 2ème année -->
                     <div class="projet-card" data-category="stage" id="stage2">
-                        <div class="projet-image" style="background-image: url('images/projet-stage2.jpg');">
+                        <div class="projet-image">
                             <div class="projet-badge">Stage</div>
+                            <svg class="projet-illus" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Application de livraison">
+                                <defs><linearGradient id="pg6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient></defs>
+                                <rect width="400" height="200" fill="url(#pg6)"/>
+                                <g class="a-pulse">
+                                    <path d="M304,52 a24,24 0 0 1 24,24 c0,17 -24,44 -24,44 c0,0 -24,-27 -24,-44 a24,24 0 0 1 24,-24 z" fill="#ffffff"/>
+                                    <circle cx="304" cy="76" r="10" fill="#3b82f6"/>
+                                </g>
+                                <g class="a-slide">
+                                    <rect x="92" y="88" width="80" height="46" rx="5" fill="#ffffff"/>
+                                    <path d="M172,100 h26 l18,18 v16 h-44 z" fill="#ffffff"/>
+                                    <rect x="178" y="105" width="22" height="14" rx="2" fill="#3b82f6"/>
+                                    <circle cx="120" cy="138" r="11" fill="#1e293b"/><circle cx="120" cy="138" r="4.5" fill="#ffffff"/>
+                                    <circle cx="196" cy="138" r="11" fill="#1e293b"/><circle cx="196" cy="138" r="4.5" fill="#ffffff"/>
+                                </g>
+                            </svg>
                         </div>
                         <div class="projet-content">
                             <h3>Stage de 2ème année — Alphatis Nîmes-Livraison</h3>
@@ -180,8 +317,26 @@
 
                     <!-- Engagement étudiant -->
                     <div class="projet-card" data-category="engagement" id="engagement1">
-                        <div class="projet-image" style="background-image: url('images/projet-engagement.jpg');">
+                        <div class="projet-image">
                             <div class="projet-badge">Engagement</div>
+                            <svg class="projet-illus" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Association Sensibilisation à l'IA">
+                                <defs><linearGradient id="pg7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#6d28d9"/></linearGradient></defs>
+                                <rect width="400" height="200" fill="url(#pg7)"/>
+                                <g stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+                                    <line x1="178" y1="68" x2="178" y2="54"/><line x1="200" y1="68" x2="200" y2="54"/><line x1="222" y1="68" x2="222" y2="54"/>
+                                    <line x1="178" y1="132" x2="178" y2="146"/><line x1="200" y1="132" x2="200" y2="146"/><line x1="222" y1="132" x2="222" y2="146"/>
+                                    <line x1="168" y1="86" x2="154" y2="86"/><line x1="168" y1="114" x2="154" y2="114"/>
+                                    <line x1="232" y1="86" x2="246" y2="86"/><line x1="232" y1="114" x2="246" y2="114"/>
+                                </g>
+                                <g class="a-pulse">
+                                    <rect x="168" y="68" width="64" height="64" rx="12" fill="#ffffff"/>
+                                    <circle cx="200" cy="100" r="16" fill="none" stroke="#8b5cf6" stroke-width="5"/>
+                                    <circle cx="200" cy="100" r="4.5" fill="#8b5cf6"/>
+                                </g>
+                                <g class="a-float" fill="#fde047">
+                                    <circle cx="300" cy="74" r="6"/><circle cx="330" cy="104" r="6"/><circle cx="296" cy="130" r="6"/>
+                                </g>
+                            </svg>
                         </div>
                         <div class="projet-content">
                             <h3>Association « Sensibilisation à l'IA »</h3>
@@ -197,8 +352,26 @@
 
                     <!-- Projet personnel -->
                     <div class="projet-card" data-category="perso" id="perso1">
-                        <div class="projet-image" style="background-image: url('images/projet-perso.jpg');">
+                        <div class="projet-image">
                             <div class="projet-badge">Perso</div>
+                            <svg class="projet-illus" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Application de gestion de tâches">
+                                <defs><linearGradient id="pg8" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06b6d4"/><stop offset="1" stop-color="#0891b2"/></linearGradient></defs>
+                                <rect width="400" height="200" fill="url(#pg8)"/>
+                                <rect x="146" y="48" width="108" height="108" rx="10" fill="#ffffff"/>
+                                <rect x="182" y="40" width="36" height="16" rx="5" fill="#a5f3fc"/>
+                                <g>
+                                    <rect x="160" y="74" width="16" height="16" rx="4" fill="#06b6d4"/>
+                                    <rect x="160" y="100" width="16" height="16" rx="4" fill="#06b6d4"/>
+                                    <rect x="160" y="126" width="16" height="16" rx="4" fill="#cbd5e1"/>
+                                    <line x1="186" y1="82" x2="236" y2="82" stroke="#cbd5e1" stroke-width="5" stroke-linecap="round"/>
+                                    <line x1="186" y1="108" x2="236" y2="108" stroke="#cbd5e1" stroke-width="5" stroke-linecap="round"/>
+                                    <line x1="186" y1="134" x2="220" y2="134" stroke="#cbd5e1" stroke-width="5" stroke-linecap="round"/>
+                                </g>
+                                <g class="a-pulse" stroke="#ffffff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="163,82 167,86 173,78"/>
+                                    <polyline points="163,108 167,112 173,104"/>
+                                </g>
+                            </svg>
                         </div>
                         <div class="projet-content">
                             <h3>Application de gestion de tâches</h3>
@@ -240,7 +413,7 @@
                             </tr>
                             <tr>
                                 <th>Outils utilisés</th>
-                                <td>HTML5, CSS3, JavaScript, Bootstrap, VS Code, WampServer, FileZilla</td>
+                                <td>HTML5, CSS3, JavaScript, Bootstrap, VS Code, Laragon, FileZilla</td>
                             </tr>
                             <tr>
                                 <th>Lieu</th>
@@ -257,9 +430,6 @@
                         </table>
                     </div>
                     <div class="details-visual">
-                        <div class="details-img">
-                            <img src="images/ap0-schema.jpg" alt="Schéma du projet AP0">
-                        </div>
                         <div class="details-links">
                             <h3>Liens utiles</h3>
                             <ul>
@@ -354,16 +524,12 @@
                         </table>
                     </div>
                     <div class="details-visual">
-                        <div class="details-img">
-                            <img src="images/ap1-schema.jpg" alt="Schéma du projet AP1">
-                        </div>
                         <div class="details-links">
                             <h3>Liens utiles</h3>
                             <ul>
                                 <li><i class="fas fa-file-pdf"></i> Sujet officiel AP1 — Site vitrine activité (Lycée CCI Nîmes) — <a href="documents/ap1/AP1_Sujet_Site_Vitrine.pdf" download>Télécharger le PDF</a></li>
                                 <li><i class="fas fa-clipboard-check"></i> Grille d'évaluation AP1 — <a href="documents/ap1/AP1_Grille_Evaluation.pdf" download>Télécharger le PDF</a></li>
                                 <li><a href="https://github.com/IhabBenmahrouz" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a></li>
-                                <li><a href="projets/ap1/" target="_blank"><i class="fas fa-external-link-alt"></i> Voir le site en ligne</a></li>
                             </ul>
                         </div>
                     </div>
@@ -471,9 +637,6 @@
                         </table>
                     </div>
                     <div class="details-visual">
-                        <div class="details-img">
-                            <img src="images/ap2-schema.jpg" alt="Schéma du projet AP2">
-                        </div>
                         <div class="details-links">
                             <h3>Liens utiles</h3>
                             <ul>
@@ -481,7 +644,6 @@
                                 <li><i class="fas fa-file-pdf"></i> Cours — Sécuriser l'accès à un site avec les sessions PHP — <a href="documents/ap2/AP2_Cours_Sessions_PHP.pdf" download>Télécharger le PDF</a></li>
                                 <li><i class="fas fa-calendar-alt"></i> Planning cours / TP / contrôle SIO1B — <a href="documents/ap2/AP2_Planning_SIO1B.pdf" download>Télécharger le PDF</a></li>
                                 <li><a href="https://github.com/IhabBenmahrouz" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a></li>
-                                <li><a href="projets/ap2/" target="_blank"><i class="fas fa-external-link-alt"></i> Voir le site en ligne</a></li>
                             </ul>
                         </div>
                     </div>
@@ -544,9 +706,6 @@
                         </table>
                     </div>
                     <div class="details-visual">
-                        <div class="details-img">
-                            <img src="images/stage1-schema.jpg" alt="Stage chez Alpha Distribution">
-                        </div>
                         <div class="details-links">
                             <h3>Document</h3>
                             <ul>
@@ -681,9 +840,6 @@
                         </table>
                     </div>
                     <div class="details-visual">
-                        <div class="details-img">
-                            <img src="images/ap3-schema.jpg" alt="Schéma du projet AP3">
-                        </div>
                         <div class="details-links">
                             <h3>Sujet et grille</h3>
                             <ul>
@@ -825,9 +981,6 @@
                         </table>
                     </div>
                     <div class="details-visual">
-                        <div class="details-img">
-                            <img src="images/ap4-schema.jpg" alt="Schéma du projet AP4">
-                        </div>
                         <div class="details-links">
                             <h3>Sujet officiel</h3>
                             <ul>
@@ -918,9 +1071,6 @@
                         </table>
                     </div>
                     <div class="details-visual">
-                        <div class="details-img">
-                            <img src="images/stage2-schema.jpg" alt="Schéma du projet de stage 2">
-                        </div>
                         <div class="details-links">
                             <h3>Documents</h3>
                             <ul>
@@ -976,9 +1126,6 @@
                         </table>
                     </div>
                     <div class="details-visual">
-                        <div class="details-img">
-                            <img src="images/engagement1-schema.jpg" alt="Association Sensibilisation à l'IA">
-                        </div>
                         <div class="details-links">
                             <h3>Pièces justificatives</h3>
                             <ul>
@@ -987,6 +1134,10 @@
                                 <li><i class="fas fa-file-pdf"></i> Liste des dirigeants — <a href="documents/engagement/CR-ListeDirigeant%20(1).pdf" download>Télécharger le PDF</a></li>
                                 <li><i class="fas fa-file-pdf"></i> Procès-verbal de l'assemblée constitutive — <a href="documents/engagement/PV_compressed.pdf" download>Télécharger le PDF</a></li>
                                 <li><i class="fas fa-file-pdf"></i> Statuts de l'association — <a href="documents/engagement/Statuts_compressed.pdf" download>Télécharger le PDF</a></li>
+                            </ul>
+                            <h3>Site en ligne</h3>
+                            <ul>
+                                <li><a href="https://ihabbenmahrouz.github.io/Site-Association-IA/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Visiter le site de l'association</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1041,9 +1192,6 @@
                         </table>
                     </div>
                     <div class="details-visual">
-                        <div class="details-img">
-                            <img src="images/perso1-schema.jpg" alt="Capture d'écran de l'application">
-                        </div>
                         <div class="details-links">
                             <h3>Liens utiles</h3>
                             <ul>
@@ -1088,16 +1236,16 @@
                 <p><i class="fas fa-envelope"></i>ihabbenmahrouz@gmail.com</p>
                 <p><i class="fas fa-phone"></i>07 67 00 27 92</p>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/ihab-benmahrouz-27a991337/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/IhabBenmahrouz" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://x.com/IhabBenmahrouz" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/ihabbenmahrouz/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61589297452883" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/ihab-benmahrouz-27a991337/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/IhabBenmahrouz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/IhaBenmahrouz17" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/ihabbenmahrouz/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61589297452883" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 - Portfolio BTS SIO - Tous droits réservés &nbsp;|&nbsp; <a href="mentions-legales.html" style="color:inherit;text-decoration:underline;">Mentions légales</a></p>
+            <p>&copy; 2026 - Portfolio BTS SIO - Tous droits réservés &nbsp;|&nbsp; <a href="mentions-legales.html" style="color:inherit;text-decoration:underline;">Mentions légales</a></p>
         </div>
     </footer>
 
@@ -1136,48 +1284,68 @@
             const detailsModals = document.querySelectorAll('.projet-details');
             const closeButtons = document.querySelectorAll('.close-details');
             
+            // Ouverture d'une fiche détaillée à partir de son identifiant
+            function openModal(targetId) {
+                const modal = document.getElementById(targetId);
+                if (!modal) return;
+
+                // Afficher l'overlay
+                detailsOverlay.style.display = 'flex';
+
+                // Masquer tous les modals
+                detailsModals.forEach(m => {
+                    m.style.display = 'none';
+                });
+
+                // Afficher le modal cible (en repartant du haut)
+                modal.style.display = 'block';
+                modal.scrollTop = 0;
+
+                // Bloquer le défilement de la page
+                document.body.style.overflow = 'hidden';
+            }
+
             detailsButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    const targetId = button.getAttribute('data-target');
-                    
-                    // Afficher l'overlay
-                    detailsOverlay.style.display = 'flex';
-                    
-                    // Masquer tous les modals
-                    detailsModals.forEach(modal => {
-                        modal.style.display = 'none';
-                    });
-                    
-                    // Afficher le modal cible
-                    document.getElementById(targetId).style.display = 'block';
-                    
-                    // Bloquer le défilement de la page
-                    document.body.style.overflow = 'hidden';
+                    openModal(button.getAttribute('data-target'));
                 });
             });
-            
+
             // Fermeture des modals
             closeButtons.forEach(button => {
                 button.addEventListener('click', closeModal);
             });
-            
+
             detailsOverlay.addEventListener('click', (e) => {
                 if (e.target === detailsOverlay || e.target.hasAttribute('data-close')) {
                     closeModal();
                 }
             });
-            
+
             function closeModal() {
                 detailsOverlay.style.display = 'none';
                 document.body.style.overflow = 'auto';
             }
-            
+
             // Fermeture avec la touche Échap
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape') {
                     closeModal();
                 }
             });
+
+            // Ouverture automatique de la fiche si l'URL pointe vers un projet
+            // (ex. arrivée depuis l'accueil : projets.html#engagement1 → ouvre la fiche)
+            function openModalFromHash() {
+                const hash = window.location.hash.replace('#', '');
+                if (!hash) return;
+                const targetId = hash.endsWith('-details') ? hash : hash + '-details';
+                if (document.getElementById(targetId)) {
+                    openModal(targetId);
+                }
+            }
+            openModalFromHash();
+            window.addEventListener('hashchange', openModalFromHash);
         });
     </script>
 </body>

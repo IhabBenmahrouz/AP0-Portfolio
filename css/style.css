@@ -18,29 +18,29 @@
     --light-color: #ecf0f1;
     --grey-color: #95a5a6;
     --danger-color: #e74c3c;
-    
+
     /* Typographie */
     --main-font: 'Poppins', sans-serif;
     --heading-font: 'Montserrat', sans-serif;
-    
+
     /* Espacements */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 3rem;
     --spacing-xl: 5rem;
-    
+
     /* Ombres */
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    
+
     /* Bordures */
     --border-radius-sm: 4px;
     --border-radius-md: 8px;
     --border-radius-lg: 16px;
     --border-radius-full: 50%;
-    
+
     /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;

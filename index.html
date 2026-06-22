@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Ihab Benmahrouz, étudiant en BTS SIO option SLAM à Nîmes : profil, compétences, projets et veille technologique.">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <title>Portfolio BTS SIO - Accueil</title>
+    <!-- Open Graph / partage sur les réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Portfolio BTS SIO — Ihab Benmahrouz">
+    <meta property="og:title" content="Portfolio BTS SIO - Accueil">
+    <meta property="og:description" content="Portfolio d'Ihab Benmahrouz, étudiant en BTS SIO option SLAM à Nîmes : profil, compétences, projets et veille technologique.">
+    <meta property="og:image" content="images/profile-placeholder.png">
+    <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/accueil.css?v=20260621-projets">
     <!-- Font Awesome pour les icônes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- Google Fonts chargées uniquement après consentement RGPD (voir js/rgpd.js) -->
     <link rel="stylesheet" href="css/rgpd.css">
 </head>
@@ -72,27 +82,83 @@
             <div class="project-gallery">
                 <!-- Les images des projets seront stylisées avec CSS -->
                 <div class="project-card">
-                    <div class="project-image" id="project1"></div>
+                    <div class="project-image">
+                        <svg class="projet-illus" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Association Sensibilisation à l'IA">
+                            <defs><linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#6d28d9"/></linearGradient></defs>
+                            <rect width="400" height="200" fill="url(#hg1)"/>
+                            <g stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+                                <line x1="178" y1="68" x2="178" y2="54"/><line x1="200" y1="68" x2="200" y2="54"/><line x1="222" y1="68" x2="222" y2="54"/>
+                                <line x1="178" y1="132" x2="178" y2="146"/><line x1="200" y1="132" x2="200" y2="146"/><line x1="222" y1="132" x2="222" y2="146"/>
+                                <line x1="168" y1="86" x2="154" y2="86"/><line x1="168" y1="114" x2="154" y2="114"/>
+                                <line x1="232" y1="86" x2="246" y2="86"/><line x1="232" y1="114" x2="246" y2="114"/>
+                            </g>
+                            <g class="a-pulse">
+                                <rect x="168" y="68" width="64" height="64" rx="12" fill="#ffffff"/>
+                                <circle cx="200" cy="100" r="16" fill="none" stroke="#8b5cf6" stroke-width="5"/>
+                                <circle cx="200" cy="100" r="4.5" fill="#8b5cf6"/>
+                            </g>
+                            <g class="a-float" fill="#fde047">
+                                <circle cx="300" cy="74" r="6"/><circle cx="330" cy="104" r="6"/><circle cx="296" cy="130" r="6"/>
+                            </g>
+                        </svg>
+                    </div>
                     <div class="project-info">
-                        <h3>Portfolio de compétences</h3>
-                        <p>AP0 - Site web responsive</p>
-                        <a href="projets.html#ap0" class="btn small">Voir détails</a>
+                        <h3>Association « Sensibilisation à l'IA »</h3>
+                        <p>Engagement étudiant - Association loi 1901</p>
+                        <a href="projets.html#engagement1" class="btn small">Voir détails</a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image" id="project2"></div>
+                    <div class="project-image">
+                        <svg class="projet-illus" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Application de livraison">
+                            <defs><linearGradient id="hg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient></defs>
+                            <rect width="400" height="200" fill="url(#hg2)"/>
+                            <g class="a-pulse">
+                                <path d="M304,52 a24,24 0 0 1 24,24 c0,17 -24,44 -24,44 c0,0 -24,-27 -24,-44 a24,24 0 0 1 24,-24 z" fill="#ffffff"/>
+                                <circle cx="304" cy="76" r="10" fill="#3b82f6"/>
+                            </g>
+                            <g class="a-slide">
+                                <rect x="92" y="88" width="80" height="46" rx="5" fill="#ffffff"/>
+                                <path d="M172,100 h26 l18,18 v16 h-44 z" fill="#ffffff"/>
+                                <rect x="178" y="105" width="22" height="14" rx="2" fill="#3b82f6"/>
+                                <circle cx="120" cy="138" r="11" fill="#1e293b"/><circle cx="120" cy="138" r="4.5" fill="#ffffff"/>
+                                <circle cx="196" cy="138" r="11" fill="#1e293b"/><circle cx="196" cy="138" r="4.5" fill="#ffffff"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h3>Stage — Alphatis Nîmes-Livraison</h3>
+                        <p>Stage 2ème année - CodeIgniter / MySQL</p>
+                        <a href="projets.html#stage2" class="btn small">Voir détails</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <svg class="projet-illus" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Migration de base de données">
+                            <defs><linearGradient id="hg3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14b8a6"/><stop offset="1" stop-color="#3b82f6"/></linearGradient></defs>
+                            <rect width="400" height="200" fill="url(#hg3)"/>
+                            <g fill="#ffffff">
+                                <rect x="92" y="78" width="64" height="46"/>
+                                <ellipse cx="124" cy="124" rx="32" ry="10"/>
+                                <ellipse cx="124" cy="78" rx="32" ry="10"/>
+                                <ellipse cx="124" cy="100" rx="32" ry="10" fill="#bae6fd"/>
+                            </g>
+                            <g fill="#ffffff">
+                                <rect x="244" y="78" width="64" height="46"/>
+                                <ellipse cx="276" cy="124" rx="32" ry="10"/>
+                                <ellipse cx="276" cy="78" rx="32" ry="10"/>
+                                <ellipse cx="276" cy="100" rx="32" ry="10" fill="#bae6fd"/>
+                            </g>
+                            <g class="a-slide" stroke="#fde047" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="170" y1="100" x2="226" y2="100"/>
+                                <polyline points="210,88 228,100 210,112"/>
+                            </g>
+                        </svg>
+                    </div>
                     <div class="project-info">
                         <h3>Maison de la Culture</h3>
-                        <p>AP1 - Site statique</p>
-                        <a href="projets.html#ap1" class="btn small">Voir détails</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image" id="project3"></div>
-                    <div class="project-info">
-                        <h3>Projet en cours</h3>
-                        <p>À venir</p>
-                        <a href="projets.html" class="btn small">Voir détails</a>
+                        <p>AP3 - SQL Server &amp; CodeIgniter</p>
+                        <a href="projets.html#ap3" class="btn small">Voir détails</a>
                     </div>
                 </div>
             </div>
@@ -122,16 +188,16 @@
                 <p><i class="fas fa-envelope"></i>ihabbenmahrouz@gmail.com</p>
                 <p><i class="fas fa-phone"></i>07 67 00 27 92</p>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/ihab-benmahrouz-27a991337/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/IhabBenmahrouz" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://x.com/IhabBenmahrouz" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/ihabbenmahrouz/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61589297452883" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/ihab-benmahrouz-27a991337/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/IhabBenmahrouz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/IhaBenmahrouz17" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/ihabbenmahrouz/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61589297452883" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 - Portfolio BTS SIO - Tous droits réservés &nbsp;|&nbsp; <a href="mentions-legales.html" style="color:inherit;text-decoration:underline;">Mentions légales</a></p>
+            <p>&copy; 2026 - Portfolio BTS SIO - Tous droits réservés &nbsp;|&nbsp; <a href="mentions-legales.html" style="color:inherit;text-decoration:underline;">Mentions légales</a></p>
         </div>
     </footer>
 

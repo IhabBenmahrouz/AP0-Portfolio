@@ -190,18 +190,42 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow: hidden;
 }
 
-#project1 {
-    background-image: url('../images/project1.jpg');
+/* Illustrations SVG des projets récents */
+.project-image svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: filter var(--transition-normal);
 }
 
-#project2 {
-    background-image: url('../images/project2.jpg');
+.project-card:hover .project-image svg {
+    filter: saturate(1.15) brightness(1.05);
 }
 
-#project3 {
-    background-image: url('../images/project3.jpg');
+.project-image svg .a-float,
+.project-image svg .a-pulse,
+.project-image svg .a-slide {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.project-card:hover .a-float { animation: hIllusFloat 1.8s ease-in-out infinite; }
+.project-card:hover .a-pulse { animation: hIllusPulse 1.5s ease-in-out infinite; }
+.project-card:hover .a-slide { animation: hIllusSlide 2s ease-in-out infinite; }
+
+@keyframes hIllusFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+@keyframes hIllusPulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.16); opacity: 0.78; } }
+@keyframes hIllusSlide { 0%, 100% { transform: translateX(-7px); } 50% { transform: translateX(7px); } }
+
+@media (prefers-reduced-motion: reduce) {
+    .project-card:hover .a-float,
+    .project-card:hover .a-pulse,
+    .project-card:hover .a-slide { animation: none; }
 }
 
 .project-info {

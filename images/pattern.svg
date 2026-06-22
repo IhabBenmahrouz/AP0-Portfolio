@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <!-- Motif décoratif tileable utilisé en filigrane (opacity 0.05) dans les en-têtes -->
+  <g fill="#ffffff">
+    <circle cx="2" cy="2" r="2"/>
+    <circle cx="22" cy="22" r="2"/>
+  </g>
+</svg>

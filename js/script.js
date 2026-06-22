@@ -21,7 +21,48 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Effet de parallaxe pour les en-têtes de page
     setupParallaxEffect();
+
+    // Repli automatique pour les images manquantes
+    setupImageFallback();
 });
+
+/**
+ * Affiche un visuel de remplacement (images/placeholder.svg) pour toute image
+ * introuvable, sans modifier les noms de fichiers prévus dans le HTML/CSS.
+ * Couvre les balises <img> et les vignettes utilisant background-image
+ * (.projet-image, .project-image). Dès qu'une vraie image est ajoutée,
+ * elle s'affiche normalement.
+ */
+function setupImageFallback() {
+    const PLACEHOLDER = 'images/placeholder.svg';
+
+    // 1) Balises <img>
+    document.querySelectorAll('img').forEach(img => {
+        if (img.getAttribute('src') === PLACEHOLDER) return;
+        const applyFallback = () => {
+            if (img.getAttribute('src') !== PLACEHOLDER) {
+                img.src = PLACEHOLDER;
+            }
+        };
+        img.addEventListener('error', applyFallback, { once: true });
+        // Image déjà chargée depuis le cache mais cassée
+        if (img.complete && img.naturalWidth === 0) {
+            applyFallback();
+        }
+    });
+
+    // 2) Vignettes avec background-image
+    document.querySelectorAll('.projet-image, .project-image').forEach(el => {
+        const bg = getComputedStyle(el).backgroundImage;
+        const match = bg && bg.match(/url\(["']?(.*?)["']?\)/);
+        if (!match) return;
+        const url = match[1];
+        if (url.indexOf('placeholder.svg') !== -1 || url.startsWith('data:')) return;
+        const test = new Image();
+        test.onerror = () => { el.style.backgroundImage = `url('${PLACEHOLDER}')`; };
+        test.src = url;
+    });
+}
 
 /**
  * Gère l'animation des éléments au défilement de la page
